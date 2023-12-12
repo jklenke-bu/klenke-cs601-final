@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Joe Klenke - Dogs</title>
+    <meta name="description" content="Joe Klenke's Home Page">
+    <meta name="keywords" content="Joe Klenke, Web Dev Student, homepage">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="assets/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js"
+        integrity="sha512-jUvo4wLmasBQ4VBRwG9qkfOP/6GkSepADybOv52QFmqEYQlPx8ihGINjxQkiaH+ygvkI0XI2dMSvPs2BcFL5Zg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/vue.js" defer></script>
+</head>
+
+<body>
+    <header></header>
+    <div id="main-body">
+        <div id="app">
+            <h1>Meet Ember and Jenny!</h1>
+            <div class="container">
+                    <div v-for="(item, index) in collections" :key="index">
+                        <img :src="item.image" :alt="item.alt" :style="item.opacity" 
+                            @mouseover="hoverText(index)" @mouseleave="hoverText(index)">
+                        <p>{{item.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>

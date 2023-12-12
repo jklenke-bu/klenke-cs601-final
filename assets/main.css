@@ -1,0 +1,146 @@
+body {
+    color: darkgray;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#main-body {
+    background-color: rgb(51, 50, 51);
+    padding-bottom: 40px;
+}
+
+a {
+    color: orange;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    margin: 3px;
+    border: 2px solid black;
+    background-color: orange;
+}
+
+/*  Going for a hover effect that will gradually change the curve of the button
+    from the top-right to the bottom-left
+*/
+
+nav li a:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50px;
+    transition: 500ms;
+}
+
+nav li a:not(hover) {
+    border-top-right-radius: 50px;
+    transition: 500ms;
+}
+
+nav ul {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+footer {
+    font-size: .8em;
+    height: 100px
+}
+
+table {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid;
+    border-color: white;
+    padding: 15px;
+}
+
+th {
+    color:orange;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 400px
+}
+
+.container p {
+    max-width: 70%;
+    margin: auto;
+}
+
+.formBox {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.formItem {
+    text-align: right;
+    font-size: 1.3em;
+    padding: 5px
+}
+
+form input {
+    background-color: orange;
+    font-size: 1.3em;
+}
+
+.formButtons > button {
+    background: linear-gradient(90deg, rgb(65, 42, 1) 0%, rgb(245, 119, 1) 35%, rgb(87, 50, 2) 100%);
+    color: white;
+    margin: 2px;
+    margin-top: 20px;
+    padding: 12px 32px;
+    font-size: 1.6em;
+}
+
+#errorBox {
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 3px;
+    }
+
+    img {
+        width: 50%;
+        
+    }
+
+    .container img {
+        width: 200px
+    }
+    
+}

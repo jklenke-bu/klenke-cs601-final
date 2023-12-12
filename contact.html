@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joe Klenke - Contact</title>
+        <meta name="description" content="Joe Klenke's Home Page">
+        <meta name="keywords" content="Joe Klenke, Web Dev Student, homepage">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/main.css">
+        <script src="assets/main.js" defer></script>
+    </head>
+    <body>
+        <header></header>
+        <div id="main-body">
+            <div class="formBox">
+            <h1 class="contactForm">Contact Form</h1>
+            <form name="contactForm" action="thankyou.html"
+                method="post" onsubmit="return true;">
+                <div class="formItem">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div class="formItem">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div class="formItem">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+            </div>
+                <div class="formButtons">
+                    <button type="submit" name="btnSubmit">Submit</button>
+                    <button type="reset" name="btnReset">Reset</button>
+                </div>
+            </form>
+            </div>
+            <p id="errorBox"></p>
+
+        <footer></footer>
+    </body>
+</html>
